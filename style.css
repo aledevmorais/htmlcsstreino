@@ -45,7 +45,7 @@ nav a:hover {
 	text-align: center;
 	width: 30%;
 	vertical-align: top;
-	margin: 0 1.0%;
+	margin: 0 1.5%;
 	padding: 30px 20px;
 	box-sizing: border-box;
 	border: 2px solid #000000;
@@ -150,5 +150,54 @@ thead {
 
 td, th {
 	border: 1px solid #000000;
-	padding: 15px 8px 8px;
+	padding: 8px 15px;
+}
+
+/* Sempre quando queremos falar de estilos usamos uma classe e 
+sempre quando falarmos de comportamento usamos o identificador */
+
+/* sempre use classes no CSS para usar um padrão*/
+
+.banner {
+	width: 100%;
+}
+
+/* sempre que criarmos uma classe no CSS temos que deixar o mais específico e mais genérico possível
+o percentual é uma medida proporcional 100% pagina 50% meia pagina */
+
+.titulo-principal {
+	text-align: center;
+	/*em medida proporcional para pixel 2em = duas vezes o tamanho base da fonte atribuida em titulo-principal*/
+	font-size: 2em ;
+	margin: 0 0 1em;
+	/*prestar atenção no float e adicionar o clear para limpar*/
+	/*clear propriedade do CSS*/
+	clear: left;
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.utensilios {
+	width: 120px;
+	/* o float altera completamente a estrutura da pagina, todos os elementos abaixo do float passam
+	a serem alterados por ele*/
+	/* o float serve para que o elemento se destaque da tela e outros fiquem em volta dele*/
+	/* float é uma propriedade do CSS
+	float: left;
+	/* 0 pra cima, 20px pra direita, 20 px para baixo, 0 para esquerda*/
+	margin: 0 20px 20px 0;
+}
+
+.imagemBeneficios {
+	width: 60%;
 }
